@@ -1,0 +1,106 @@
+/* font-family: 'Black Han Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif; */
+
+:root{
+	--hi-font-han : 'Black Han Sans', sans-serif;
+	--hi-font: 'Noto Sans KR', sans-serif;
+	--hi-font-em:'Noto Serif KR', serif;
+	--hi-active : #673ab7;
+}
+
+body{
+	font-family: var(--hi-font);
+	font: 100;
+	font-size: 16px;
+	line-height: 2;
+}
+li{
+	list-style: 0;
+}
+a{
+	color: var(--hi-active);
+	text-decoration: none;
+}
+
+/* 공통클래스 */
+
+/* 접근성 */
+.hidden{
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+
+button#top.top{
+	position: fixed;
+  background-color: #000;
+	color: #fff;
+	right: 10px;
+	bottom: 10px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	cursor: pointer;
+	border-style:none;
+	
+}	
+
+button#top.top>i{
+	text-align: center;
+}
+ul#quick{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 25px;
+	line-height: 2em;
+	
+}
+
+ul#quick>li{
+	width: 100px;
+	margin: 2px 0;
+	transition: 0.5s;
+	
+}
+ul#quick  a{
+	color: #fff;
+}
+
+ul#quick  li.yb{
+ background-color: #ff0000;
+}
+
+ul#quick  li.tw{
+	background-color: #2aa4d9;
+ }
+
+ ul#quick  li.fb{
+	background-color: #345898;
+ }
+
+ ul#quick  li.ig{
+	background: rgb(162,40,255);
+	background: linear-gradient(90deg, rgba(162,40,255,0.958420868347339) 0%, rgba(255,42,42,1) 42%, rgba(255,134,34,1) 100%);
+ }
+ 
+
+ul#quick>li>a>i{
+	display: inline-block;
+	width: 25px;
+	text-align:center;
+
+	
+
+}
+
+ul#quick li:hover{
+	margin-left: -75px;;
+}
+	
+}
+}
